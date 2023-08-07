@@ -1,0 +1,3 @@
+package: github.com/lucavallin/transit
+import:
+- package: github.com/icrowley/fake

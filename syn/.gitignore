@@ -1,0 +1,12 @@
+*.tfvars
+.terraform
+.idea
+.terraform.lock.hcl
+*.plan
+keys.json
+node_modules
+../cats.jpeg
+cats.jpeg
+.expo
+.env
+cat.jpg

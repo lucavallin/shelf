@@ -1,0 +1,21 @@
+version: '3.1'
+services:
+  revlect:
+    build:
+      context: .
+    container_name: yak-webshop
+    ports:
+      - 80:80
+    volumes:
+      - ./:/app
+    links:
+      - mongodb
+    environment:
+      PORT: 80
+      MONGO_DSN: mongodb://mongodb:27017
+      DATABASE: yak_webshop
+  mongodb:
+    image: mongo:3.2
+    container_name: mongodb
+    ports:
+    - 27017:27017

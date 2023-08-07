@@ -1,0 +1,17 @@
+language: go
+go:
+- tip
+env:
+  global:
+    secure: ou2rHXuPVZB3DwI0WTOReq4SFQjoLj3Z9dbVGY1Uvvjz4HmvnxBV5cf+W0O5JZo2g39lBSom1oofrleAUFqdP6+puWbRXJSRaaOGleERdBJ/lEKD0kxInxux4bJ+HhQlqzrpz0R6SdnCI7zR3339+nkW8pzoKwzD4DYx6oEXFIHAvL0ALP/mIVETu5HS5vV9CBJwSusVkywASPSu/ogIx64qtqeUxfY8E5UGgXvIQ3KWXDP39wtBULX2uH8pJ2tC93+6+xmJ6gvrNMUS3EEPg+zm7Hr8P8JEvS+9mS4NGvCEdagoUXYnnoYq3aKcjM0Zq3HoPm+DZE4pQv/gyobL0JFUtP4j/WwdLnCrJOP/QVZjWuE5Xo7QsVcl0h29A+5DteFOy06j8D7i5Vsk1TjMJUf/d2A+GdsKxZHgCixW6X72a5v3esMWI+J1/bF0d7PyrVOl3t5iMiFADbejk3b1lpO+N3MaRfpwcBnxkO2vSQkMnMmVUqhUUAmGln26HSi5TzgyDccE9gZQOLpP3mmb1ont29ZmD9JCqDmXvgfnGGp3JfOhnNuaxeYh1hhL0RoSop9yEtby4pPrjIaOHIQmDZf//yriOcvl3GMIVfrQh86j0IyyDBvdF8pH+/a419czyNdfRTgayzNt423NOto3CqhIK42/LH54733+B4Vfgws=
+
+before_install:
+- make prepare
+install:
+- make deps
+script:
+- make lint
+- make test
+- bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
+after_success:
+- make coverage

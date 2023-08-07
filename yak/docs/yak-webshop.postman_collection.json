@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "8a97732b-e210-45e3-8b4a-78c2cd3eede0",
+		"name": "yak-webshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:80/yak-webshop/order/13",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"customer\":\"Medvedev\",\n   \"order\":{\n      \"milk\":1100,\n      \"skins\":3\n   }\n}"
+				},
+				"url": {
+					"raw": "localhost:80/yak-webshop/order/13",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"yak-webshop",
+						"order",
+						"13"
+					]
+				},
+				"description": "Place an order"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:80/yak-webshop/load",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<herd>\n    <labyak name=\"Betty-1\" age=\"5\" sex=\"f\"/>\n    <labyak name=\"Betty-2\" age=\"6\" sex=\"f\"/>\n    <labyak name=\"Betty-3\" age=\"7\" sex=\"f\"/>\n</herd>"
+				},
+				"url": {
+					"raw": "localhost:80/yak-webshop/load",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"yak-webshop",
+						"load"
+					]
+				},
+				"description": "Get the stock"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:80/yak-webshop/herd/13",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<herd>\n    <labyak name=\"Betty-1\" age=\"5\" sex=\"f\"/>\n    <labyak name=\"Betty-2\" age=\"6\" sex=\"f\"/>\n    <labyak name=\"Betty-3\" age=\"7\" sex=\"f\"/>\n</herd>"
+				},
+				"url": {
+					"raw": "localhost:8333/yak-webshop/herd/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8333",
+					"path": [
+						"yak-webshop",
+						"herd",
+						"13"
+					]
+				},
+				"description": "Get the herd"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:80/yak-webshop/stock/13",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<herd>\n    <labyak name=\"Betty-1\" age=\"5\" sex=\"f\"/>\n    <labyak name=\"Betty-2\" age=\"6\" sex=\"f\"/>\n    <labyak name=\"Betty-3\" age=\"7\" sex=\"f\"/>\n</herd>"
+				},
+				"url": {
+					"raw": "localhost:8333/yak-webshop/stock/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8333",
+					"path": [
+						"yak-webshop",
+						"stock",
+						"13"
+					]
+				},
+				"description": "Get the stock"
+			},
+			"response": []
+		}
+	]
+}

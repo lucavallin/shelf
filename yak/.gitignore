@@ -1,0 +1,5 @@
+.idea
+vendor
+yak-webshop
+node_modules
+.next

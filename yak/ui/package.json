@@ -1,0 +1,93 @@
+{
+  "name": "yak-webshop",
+  "version": "1.0.0",
+  "description": "Helping a yak shepherd living on the tundra herding a group of Yaks.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "NODE_ENV=test jest",
+    "lint-css": "stylelint './*.js'",
+    "lint-js": "eslint . --ignore-path ../.gitignore --fix",
+    "prettify": "prettier --write"
+  },
+  "engines": {
+    "npm": ">=5",
+    "node": ">=8.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lucavallin/yak-webshop.git"
+  },
+  "keywords": [
+    "yak",
+    "webshop",
+    "ui",
+    "shepherd"
+  ],
+  "author": "Luca Cavallin <me@lucavall.in>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucavallin/yak-webshop/issues"
+  },
+  "homepage": "https://github.com/lucavallin/yak-webshop#readme",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "next": "^7.0.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "reactstrap": "^6.5.0"
+  },
+  "devDependencies": {
+    "acorn": "^6.0.4",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "enzyme": "3.4.3",
+    "enzyme-adapter-react-16": "1.2.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "23.5.0",
+    "prettier": "^1.14.3",
+    "react-addons-test-utils": "15.6.2",
+    "stylelint": "^9.7.1",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.5.0"
+  },
+  "babel": {
+    "env": {
+      "development": {
+        "presets": [
+          "next/babel"
+        ]
+      },
+      "production": {
+        "presets": [
+          "next/babel"
+        ]
+      },
+      "test": {
+        "presets": [
+          [
+            "next/babel",
+            {
+              "preset-env": {
+                "modules": "commonjs"
+              }
+            }
+          ]
+        ]
+      }
+    }
+  }
+}
