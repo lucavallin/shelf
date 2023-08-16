@@ -1,0 +1,17 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ $.Site.Params.description }}
+        <br /><br />
+        The rest of my time is spent cycling, cooking on a kamado, stargazing, playing piano or videogames, and cleaning litterboxes 🐈.
+        <br /><br />
+        Check out my LinkedIn and GitHub profiles for more info or to reach out, and if you have some spare time, also <a href="https://firstissue.dev">FirstIssue</a> and <a href="https://mentorcruise.com/mentor/lucacavallin/">my mentoring program</a>.
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" site.Params.socialIcons }}
+    </footer>
+</article>
+{{- end -}}
