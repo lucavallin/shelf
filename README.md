@@ -3,6 +3,7 @@ This repository contains my own past work, a number of projects which aren't wor
 
 ## Projects
 
+- [momon](momon/) (💀 2024): All my creative coding projects in one place. (1 ⭐️).
 - [lucavallin.github.io](lucavallin.github.io/) (💀 2023): Personal website and blog built with Hugo (2 ⭐️).
 - [cs-fast](cs-fast/) (💀 2020): List of practical books covering most computer science fundamentals and hot topics in the industry, with a good overview of each area (37 ⭐️, 3 🍴, 5 👀).
 - [gcb](gcb/) (💀 2017): Circuit breaker for gRPC using hystrixjs (2 ⭐️, 2 👀).
